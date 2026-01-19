@@ -23,7 +23,41 @@ export default function Gallery() {
             <source type="image/avif" srcSet={`${it.base}.avif`} />
             <source type="image/webp" srcSet={`${it.base}.webp`} />
 
-            {/* <-!--
+            {/*
+                Explicación:
+
+
+src: Imagen por defecto si srcset no es soportado.
+
+
+srcset: Lista de imágenes y sus anchos en píxeles (w = width).
+
+Ejemplo: "imagen-mediana.jpg 800w" significa que esa imagen tiene 800px de ancho.
+
+
+sizes: Le dice al navegador qué ancho tendrá la imagen en la página según el ancho de la ventana (viewport).
+
+Esto ayuda al navegador a escoger la imagen más adecuada antes de descargarla.
+
+
+
+2️⃣ Cómo funciona paso a paso
+
+El navegador mira el ancho del viewport (pantalla del usuario).
+
+
+Consulta el atributo sizes para saber cuánto ocupará la imagen.
+
+
+Busca en srcset la imagen más cercana a ese tamaño.
+
+
+Descarga solo esa imagen, evitando cargar una versión demasiado grande o demasiado pequeña.
+
+              
+
+            
+            <-!--
             <img srcset="imagen-pequena.jpg 480w,
              imagen-mediana.jpg 800w,
              imagen-grande.jpg 1200w"

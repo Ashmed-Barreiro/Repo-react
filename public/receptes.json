@@ -1,0 +1,22 @@
+{
+  "receptes": [
+    {
+      "id": 1,
+      "nom": "Amanida de quinoa",
+      "descripcio": "Una amanida rica en proteïnes amb verdures fresques.",
+      "imatge": "https://pistachocoffeebrunch.com/wp-content/uploads/2025/01/ensalada_de_quinoa_con_olivas_y_tomates_cherry.jpg"
+    },
+    {
+      "id": 2,
+      "nom": "Torrada d’alvocat",
+      "descripcio": "Pa torrat cobert amb alvocat aixafat i un toc de llimona.",
+      "imatge": "https://images.pexels.com/photos/10464867/pexels-photo-10464867.jpeg"
+    },
+    {
+      "id": 3,
+      "nom": "Batut de baies",
+      "descripcio": "Una beguda refrescant de baies i iogurt natural.",
+      "imatge": "https://etselquemenges.cat/wp-content/media/2016/02/batido-chia-bayas-2-1.jpg"
+    }
+  ]
+}

@@ -6,6 +6,8 @@ const items = [
   { id: 1, alt: 'Imatge de mostra 1', base: '/media/img1' },
   { id: 2, alt: 'Imatge de mostra 2', base: '/media/img3' },
   { id: 3, alt: 'Imatge de mostra 3', base: '/media/img2' },
+  { id: 4, alt: 'aston', base: '/media/aston' },
+  { id: 5, alt: 'tesla', base: '/media/tesla' },
 ]
 
 export default function Gallery() {
@@ -20,6 +22,7 @@ export default function Gallery() {
           <picture key={it.id}>
             <source type="image/avif" srcSet={`${it.base}.avif`} />
             <source type="image/webp" srcSet={`${it.base}.webp`} />
+
             {/* <-!--
             <img srcset="imagen-pequena.jpg 480w,
              imagen-mediana.jpg 800w,
@@ -27,6 +30,8 @@ export default function Gallery() {
               sizes="(max-width: 600px) 100vw,
             50vw"
               src="imagen-mediana.jpg" alt="Descripción de la imagen"></img> */}
+            <img srcSet="/media/aston.jpg 300w, /media/aston_grande.jpg 500w" alt="">
+            </img>
             <img
               src={`${it.base}.jpg`}
               alt={it.alt}

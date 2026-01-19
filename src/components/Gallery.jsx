@@ -20,6 +20,13 @@ export default function Gallery() {
           <picture key={it.id}>
             <source type="image/avif" srcSet={`${it.base}.avif`} />
             <source type="image/webp" srcSet={`${it.base}.webp`} />
+            {/* <-!--
+            <img srcset="imagen-pequena.jpg 480w,
+             imagen-mediana.jpg 800w,
+             imagen-grande.jpg 1200w"
+              sizes="(max-width: 600px) 100vw,
+            50vw"
+              src="imagen-mediana.jpg" alt="Descripción de la imagen"></img> */}
             <img
               src={`${it.base}.jpg`}
               alt={it.alt}

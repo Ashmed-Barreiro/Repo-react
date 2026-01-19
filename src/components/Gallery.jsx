@@ -4,8 +4,8 @@
 
 const items = [
   { id: 1, alt: 'Imatge de mostra 1', base: '/media/img1' },
-  { id: 2, alt: 'Imatge de mostra 2', base: '/media/img2' },
-  { id: 3, alt: 'Imatge de mostra 3', base: '/media/img3' },
+  { id: 2, alt: 'Imatge de mostra 2', base: '/media/img3' },
+  { id: 3, alt: 'Imatge de mostra 3', base: '/media/img2' },
 ]
 
 export default function Gallery() {

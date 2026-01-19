@@ -16,7 +16,7 @@ export default function LlistatReceptes() {
       try {
         setStatus('loading')
         setError('')
-
+        
         // In Vite: anything inside /public is served from the root ("/")
         const res = await fetch('/receptes.json', { signal: controller.signal })
         if (!res.ok) throw new Error(`HTTP ${res.status}`)
